@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-postgres-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-vishal-kumar/nodejs-postgres-crud"
+  },
+  "author": "Vishal Kumar",
+  "email": "vishal194kumar@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4"
+  }
+}
