@@ -6,9 +6,9 @@
 'use strict';
 
 module.exports = {
-    username: `postgres`,
-    password: `0000`,
-    host: '127.0.0.1',
-    port: '5432',
+    username: `fun`,
+    password: `gyaan`,
+    host: 'localhost', // default host
+    port: '5432', // default port
     db: Pack.name
 };

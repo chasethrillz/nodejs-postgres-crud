@@ -35,16 +35,17 @@ const getUser = async (req, res) => {
     }
 };
 
-// const updateUser = async (req, res) => {
-//     try {
-//         let criteria = { id: req.body.userId };
-//         let dataToUpdate = { lastName: req.body.lastName };
-//         const user = await Models.User.update(dataToUpdate, { where: criteria });
-//         res.json({ user });
-//     } catch (error) {
-//         throw (error);
-//     }
-// };
+const updateUser = async (req, res) => {
+    console.log(req.body)
+    try {
+        let criteria = { id: req.body.userId };
+        let dataToUpdate = { firstName: req.body.firstName, lastName: req.body.lastName };
+        const user = await Models.User.update(dataToUpdate, { where: criteria });
+        res.json({ user });
+    } catch (error) {
+        throw (error);
+    }
+};
 
 const deleteUser = async (req, res) => {
     try {
@@ -59,6 +60,6 @@ module.exports = {
     createUser,
     getAllUsers,
     getUser,
-    // updateUser,
-    deleteUser
+    updateUser,
+    deleteUser,
 };

@@ -1,5 +1,5 @@
 /**
- * userModel.js
+ * user.js
  * Vishal Kumar
  */
 
@@ -8,8 +8,8 @@
 const Sequelize = require('sequelize');
 const Config = require('../config');
 
-const sequelize = require('../app').db.sequelize;
-// const sequelize = new Sequelize(`postgres://${Config.dbConfig.username}:${Config.dbConfig.password}@${Config.dbConfig.host}:${Config.dbConfig.port}/${Pack.name}`);
+// const sequelize = require('../app').db.sequelize;
+const sequelize = new Sequelize(`postgres://${Config.dbConfig.username}:${Config.dbConfig.password}@${Config.dbConfig.host}:${Config.dbConfig.port}/${Pack.name}`);
 
 const User = sequelize.define('user', {
     firstName: {
@@ -21,7 +21,6 @@ const User = sequelize.define('user', {
         // allowNull defaults to true
     }
 }, { // options
-
 });
 
 // Note: using `force: true` will drop the table if it already exists

@@ -5,7 +5,7 @@
 
 'use strict';
 
-const User = require('./userModel');
+const User = require('./user');
 
 module.exports = {
     User,

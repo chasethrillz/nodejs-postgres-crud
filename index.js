@@ -4,7 +4,7 @@
  */
 
 'use strict';
-global.__basedir = __dirname;
+
 global.Pack = require('./package.json');
 
 let nodeVersion = parseInt(process.versions.node);
