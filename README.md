@@ -27,6 +27,8 @@ Summed up steps:-
     - ALTER USER postgres WITH PASSWORD 'postgres';
 - add user named 'fun' with password 'gyaan'
     - CREATE USER fun WITH PASSWORD 'gyaan';
+- create database named "nodejs-postgres-template" with owner as "fun"
+    - CREATE DATABASE "nodejs-postgres-template" OWNER "fun";
 - to exit cli
     - exit
 - to exit as super user
