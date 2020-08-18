@@ -36,7 +36,6 @@ const getUser = async (req, res) => {
 };
 
 const updateUser = async (req, res) => {
-    console.log(req.body)
     try {
         let criteria = { id: req.body.userId };
         let dataToUpdate = { firstName: req.body.firstName, lastName: req.body.lastName };

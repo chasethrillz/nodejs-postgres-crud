@@ -1,6 +1,6 @@
 # nodejs-postgres-crud
 #### NodeJs v12.18.3
-#### PostgresSQL v12.4
+#### PostgreSQL v12.4
 #### Sequelize v6.3.4
 
 ## Installing PostgreSQL
@@ -24,10 +24,10 @@ Summed up steps:-
 - list users
     - \du
 - change password of main user 'postgres' to 'postgres'
-    - ALTER USER postgres WITH PASSWORD 'postgres';
+    - ALTER USER "postgres" WITH PASSWORD "postgres";
 - add user named 'fun' with password 'gyaan'
-    - CREATE USER fun WITH PASSWORD 'gyaan';
-- create database named "nodejs-postgres-template" with owner as "fun"
+    - CREATE USER "fun" WITH PASSWORD "gyaan";
+- create database named 'nodejs-postgres-template' with owner as 'fun'
     - CREATE DATABASE "nodejs-postgres-template" OWNER "fun";
 - to exit cli
     - exit
@@ -44,5 +44,5 @@ Summed up steps:-
 - once the server is running, send the CRUD requests one by one
 
 ## Contact Author
-#### Email mailto:vishal194kumar@gmail.com
+#### Email vishal194kumar@gmail.com
 #### Follow https://twitter.com/the_vishalkr
